@@ -3,7 +3,7 @@ from datetime import datetime
 
 # Configurações da API
 GITHUB_API_URL = "https://api.github.com/graphql"
-TOKEN = "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"
+TOKEN = "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"
 
 headers = {"Authorization": f"Bearer {TOKEN}"}
 
