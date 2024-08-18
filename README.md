@@ -1,4 +1,4 @@
-# LABORATO-RIO-1-Caracteristicas-de-reposito-rios-populares
+# LABORATORIO-1-Caracteristicas-de-repositorios-populares
 
 RQ 01. Sistemas populares são maduros/antigos?<br>
 Métrica: idade do repositório (calculado a partir da data de sua criação)<br><br>
