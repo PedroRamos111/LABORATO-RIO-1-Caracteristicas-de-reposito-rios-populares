@@ -1,5 +1,4 @@
 import requests
-from datetime import datetime
 
 # Configurações da API
 GITHUB_API_URL = "https://api.github.com/graphql"
@@ -32,19 +31,15 @@ query ($after: String) {
           stargazers {
             totalCount
           }
+          releases {
+            totalCount
+          }
         }
       }
     }
   }
 }
 """
-
-# Função para calcular a idade do repositório
-def calcular_idade(data_criacao):
-    data_criacao = datetime.strptime(data_criacao, '%Y-%m-%dT%H:%M:%SZ')
-    data_atual = datetime.utcnow()
-    idade_anos = (data_atual - data_criacao).days / 365.25  
-    return idade_anos
 
 variables = {"after": None}
 resultados = []
@@ -61,17 +56,15 @@ while total_repos < max_repos:
         break
     variables['after'] = data['pageInfo']['endCursor']
 
-
 resultados = resultados[:max_repos]
 
-# Processar os dados para calcular a idade dos repositórios e imprimir as informações
-idades = []
+releases = []
 for index, repo in enumerate(resultados, start=1):
     repo_data = repo['node']
-    idade = calcular_idade(repo_data["createdAt"])
-    idades.append(idade)
-    print(f"{index}: Repositório: {repo_data['name']}, Estrelas: {repo_data['stargazers']['totalCount']}, Idade: {idade:.2f} anos")
+    total_releases = repo_data['releases']['totalCount']
+    releases.append(total_releases)
+    print(f"{index}: Repositório: {repo_data['name']}, Estrelas: {repo_data['stargazers']['totalCount']}, Releases: {total_releases}")
 
 
-media_idade = sum(idades) / len(idades)
-print(f"Idade média dos repositórios: {media_idade:.2f} anos")
+media_releases = sum(releases) / len(releases)
+print(f"Média de Releases por Repositório: {media_releases:.2f}")

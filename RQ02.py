@@ -2,7 +2,7 @@ import requests
 
 # Configurações da API
 GITHUB_API_URL = "https://api.github.com/graphql"
-TOKEN = "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"
+TOKEN = ""
 
 headers = {"Authorization": f"Bearer {TOKEN}"}
 
@@ -41,7 +41,6 @@ query ($after: String) {
 }
 """
 
-# Variável para paginação
 variables = {"after": None}
 resultados = []
 total_repos = 0
@@ -57,7 +56,6 @@ while total_repos < max_repos:
         break
     variables['after'] = data['pageInfo']['endCursor']
 
-# Limitar ao número exato de repositórios necessários
 resultados = resultados[:max_repos]
 
 # Processar os dados para calcular a idade dos repositórios e imprimir as informações
@@ -68,6 +66,6 @@ for index, repo in enumerate(resultados, start=1):
     pull_requests.append(pr_aceitas)
     print(f"{index}: Repositório: {repo_data['name']}, Estrelas: {repo_data['stargazers']['totalCount']}, Pull Requests Aceitas: {pr_aceitas}")
 
-# Calcular a média de pull requests aceitas
+
 media_pr_aceitas = sum(pull_requests) / len(pull_requests)
 print(f"Média de Pull Requests Aceitas: {media_pr_aceitas:.2f}")
