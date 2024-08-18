@@ -3,6 +3,13 @@
 Giovanni Bogliolo Sirihal Duarte<br>
 Luiz Gustavo Mendes Santos<br>
 Pedro Ramos Vidigal<br><br>
+## Instruções de uso<br>
+1. Execute os comandos a seguir:<br>
+```pip install langdetect```<br>
+```pip install langcodes```<br>
+```pip install requests```<br>
+2. Coloque o seu token da api do github na variável ```TOKEN```<br>
+3. Execute os arquivos .py<br><br>
 ## Requisitos:
 **RQ 01.** Sistemas populares são maduros/antigos?<br>
 Métrica: idade do repositório (calculado a partir da data de sua criação)<br><br>
