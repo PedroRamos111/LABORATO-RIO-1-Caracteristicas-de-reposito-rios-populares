@@ -1,5 +1,6 @@
 import requests
 from datetime import datetime
+import csv
 
 # Configurações da API
 GITHUB_API_URL = "https://api.github.com/graphql"
@@ -49,9 +50,9 @@ def calcular_idade(data_criacao):
 variables = {"after": None}
 resultados = []
 total_repos = 0
-max_repos = 100
+max_repos = 1000
 
-# Coletar dados de até 100 repositórios
+# Coletar dados de até 1000 repositórios
 while total_repos < max_repos:
     result = run_query(query, variables)
     data = result['data']['search']
@@ -61,17 +62,19 @@ while total_repos < max_repos:
         break
     variables['after'] = data['pageInfo']['endCursor']
 
-
 resultados = resultados[:max_repos]
 
-# Processar os dados para calcular a idade dos repositórios e imprimir as informações
+# Processar os dados para calcular a idade dos repositórios e salvar as informações em um arquivo CSV
 idades = []
-for index, repo in enumerate(resultados, start=1):
-    repo_data = repo['node']
-    idade = calcular_idade(repo_data["createdAt"])
-    idades.append(idade)
-    print(f"{index}: Repositório: {repo_data['name']}, Estrelas: {repo_data['stargazers']['totalCount']}, Idade: {idade:.2f} anos")
+with open('DadosRQ01.csv', mode='w', newline='') as arquivo_csv:
+    writer = csv.writer(arquivo_csv)
+    writer.writerow(["Nome do Repositório", "Estrelas", "Idade (anos)"])
 
+    for index, repo in enumerate(resultados, start=1):
+        repo_data = repo['node']
+        idade = calcular_idade(repo_data["createdAt"])
+        idades.append(idade)
+        writer.writerow([repo_data['name'], repo_data['stargazers']['totalCount'], f"{idade:.2f}"])
 
 media_idade = sum(idades) / len(idades)
 print(f"Idade média dos repositórios: {media_idade:.2f} anos")

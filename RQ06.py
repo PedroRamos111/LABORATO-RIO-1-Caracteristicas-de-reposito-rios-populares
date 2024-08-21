@@ -1,5 +1,6 @@
 import requests
 from datetime import datetime
+import csv
 
 # Configurações da API
 GITHUB_API_URL = "https://api.github.com/graphql"
@@ -47,7 +48,7 @@ query ($after: String) {
 variables = {"after": None}
 resultados = []
 total_repos = 0
-max_repos = 100
+max_repos = 1000
 
 while total_repos < max_repos:
     result = run_query(query, variables)
@@ -63,16 +64,19 @@ resultados = resultados[:max_repos]
 
 
 razoes_fechamento = []
-for index, repo in enumerate(resultados, start=1):
-    repo_data = repo['node']
-    total_issues = repo_data['issues']['totalCount']
-    closed_issues = repo_data['closedIssues']['totalCount']
-    if total_issues > 0:
-        razao_fechamento = closed_issues / total_issues
-    else:
-        razao_fechamento = 0 
-    razoes_fechamento.append(razao_fechamento)
-    print(f"{index}: Repositório: {repo_data['name']}, Estrelas: {repo_data['stargazers']['totalCount']}, Razão Fechamento Issues: {razao_fechamento:.2%}")
+with open('DadosRQ06.csv', mode='w', newline='') as arquivo_csv:
+    writer = csv.writer(arquivo_csv)
+    writer.writerow(["Nome do Repositório", "Estrelas", "Razão Fechamento Issues:"])
+    for index, repo in enumerate(resultados, start=1):
+        repo_data = repo['node']
+        total_issues = repo_data['issues']['totalCount']
+        closed_issues = repo_data['closedIssues']['totalCount']
+        if total_issues > 0:
+            razao_fechamento = closed_issues / total_issues
+        else:
+            razao_fechamento = 0 
+        razoes_fechamento.append(razao_fechamento)
+        writer.writerow([repo_data['name'], repo_data['stargazers']['totalCount'], f"{razao_fechamento:.2%}"])
 
 
 media_razao_fechamento = sum(razoes_fechamento) / len(razoes_fechamento)

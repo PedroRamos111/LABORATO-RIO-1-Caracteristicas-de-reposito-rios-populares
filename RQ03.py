@@ -1,4 +1,5 @@
 import requests
+import csv
 
 # Configurações da API
 GITHUB_API_URL = "https://api.github.com/graphql"
@@ -44,9 +45,9 @@ query ($after: String) {
 variables = {"after": None}
 resultados = []
 total_repos = 0
-max_repos = 100
+max_repos = 1000
 
-# Coletar dados de até 100 repositórios
+# Coletar dados de até 1000 repositórios
 while total_repos < max_repos:
     result = run_query(query, variables)
     data = result['data']['search']
@@ -59,11 +60,14 @@ while total_repos < max_repos:
 resultados = resultados[:max_repos]
 
 releases = []
-for index, repo in enumerate(resultados, start=1):
-    repo_data = repo['node']
-    total_releases = repo_data['releases']['totalCount']
-    releases.append(total_releases)
-    print(f"{index}: Repositório: {repo_data['name']}, Estrelas: {repo_data['stargazers']['totalCount']}, Releases: {total_releases}")
+with open('DadosRQ03.csv', mode='w', newline='') as arquivo_csv:
+    writer = csv.writer(arquivo_csv)
+    writer.writerow(["Nome do Repositório", "Estrelas", "Releases"])
+    for index, repo in enumerate(resultados, start=1):
+      repo_data = repo['node']
+      total_releases = repo_data['releases']['totalCount']
+      releases.append(total_releases)
+      writer.writerow([repo_data['name'], repo_data['stargazers']['totalCount'], f"{total_releases}"])
 
 
 media_releases = sum(releases) / len(releases)

@@ -1,4 +1,5 @@
 import requests
+import csv
 
 # Configurações da API
 GITHUB_API_URL = "https://api.github.com/graphql"
@@ -44,9 +45,9 @@ query ($after: String) {
 variables = {"after": None}
 resultados = []
 total_repos = 0
-max_repos = 100
+max_repos = 1000
 
-# Coletar dados de até 100 repositórios
+# Coletar dados de até 1000 repositórios
 while total_repos < max_repos:
     result = run_query(query, variables)
     data = result['data']['search']
@@ -58,14 +59,17 @@ while total_repos < max_repos:
 
 resultados = resultados[:max_repos]
 
-# Processar os dados para calcular a idade dos repositórios e imprimir as informações
+# Processar os dados para calcular a quantidade de pull requests dos repositórios e salvar as informações em um arquivo csv
 pull_requests = []
-for index, repo in enumerate(resultados, start=1):
-    repo_data = repo['node']
-    pr_aceitas = repo_data['pullRequests']['totalCount']
-    pull_requests.append(pr_aceitas)
-    print(f"{index}: Repositório: {repo_data['name']}, Estrelas: {repo_data['stargazers']['totalCount']}, Pull Requests Aceitas: {pr_aceitas}")
+with open('DadosRQ02.csv', mode='w', newline='') as arquivo_csv:
+    writer = csv.writer(arquivo_csv)
+    writer.writerow(["Nome do Repositório", "Estrelas", "Pull Requests Aceitas"])
 
+    for index, repo in enumerate(resultados, start=1):
+        repo_data = repo['node']
+        pr_aceitas = repo_data['pullRequests']['totalCount']
+        pull_requests.append(pr_aceitas)
+        writer.writerow([repo_data['name'], repo_data['stargazers']['totalCount'], f"{pr_aceitas}"])
 
 media_pr_aceitas = sum(pull_requests) / len(pull_requests)
 print(f"Média de Pull Requests Aceitas: {media_pr_aceitas:.2f}")
