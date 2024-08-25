@@ -1,5 +1,8 @@
+import numpy as np
 import requests
 import csv
+
+from scipy import stats
 
 # Configurações da API
 GITHUB_API_URL = "https://api.github.com/graphql"
@@ -70,5 +73,16 @@ with open('DadosRQ03.csv', mode='w', newline='') as arquivo_csv:
       writer.writerow([repo_data['name'], repo_data['stargazers']['totalCount'], f"{total_releases}"])
 
 
-media_releases = sum(releases) / len(releases)
-print(f"Média de Releases por Repositório: {media_releases:.2f}")
+media = np.mean(releases)
+
+# Calcular a mediana
+mediana = np.median(releases)
+
+# Calcular a moda
+moda = stats.mode(releases, keepdims=True)
+
+with open('DadosRQ03.csv', mode='a', newline='') as arquivo_csv:  
+    writer = csv.writer(arquivo_csv)
+    writer.writerow([])
+    writer.writerow(["Média", "Mediana", "Moda", "Ocorrências"])
+    writer.writerow([media, mediana, moda.mode[0], moda.count[0]])

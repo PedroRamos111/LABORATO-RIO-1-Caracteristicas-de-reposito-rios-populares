@@ -1,6 +1,8 @@
 import requests
 from datetime import datetime
 import csv
+import numpy as np
+from scipy import stats
 
 # Configurações da API
 GITHUB_API_URL = "https://api.github.com/graphql"
@@ -76,5 +78,16 @@ with open('DadosRQ01.csv', mode='w', newline='') as arquivo_csv:
         idades.append(idade)
         writer.writerow([repo_data['name'], repo_data['stargazers']['totalCount'], f"{idade:.2f}"])
 
-media_idade = sum(idades) / len(idades)
-print(f"Idade média dos repositórios: {media_idade:.2f} anos")
+media = np.mean(idades)
+
+# Calcular a mediana
+mediana = np.median(idades)
+
+# Calcular a moda
+moda = stats.mode(idades, keepdims=True)
+
+with open('DadosRQ01.csv', mode='a', newline='') as arquivo_csv:  
+    writer = csv.writer(arquivo_csv)
+    writer.writerow([])
+    writer.writerow(["Média", "Mediana", "Moda", "Ocorrências"])
+    writer.writerow([media, mediana, moda.mode[0], moda.count[0]])

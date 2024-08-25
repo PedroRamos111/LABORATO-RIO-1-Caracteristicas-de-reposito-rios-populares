@@ -1,85 +1,85 @@
 Nome do Repositório,Estrelas,Linguagem Principal
 freeCodeCamp,399662,TypeScript
 free-programming-books,332148,Não especificada
-awesome,320806,Não especificada
+awesome,320810,Não especificada
 public-apis,310667,Python
-coding-interview-university,303016,Não especificada
-build-your-own-x,296570,Não especificada
+coding-interview-university,303017,Não especificada
+build-your-own-x,296573,Não especificada
 developer-roadmap,288741,TypeScript
 996.ICU,269625,Não especificada
-system-design-primer,267902,Python
+system-design-primer,267903,Python
 react,226652,JavaScript
-awesome-python,216684,Python
+awesome-python,216685,Python
 vue,207602,TypeScript
-project-based-learning,193538,Não especificada
-awesome-selfhosted,192045,Não especificada
-javascript-algorithms,186422,JavaScript
+project-based-learning,193540,Não especificada
+awesome-selfhosted,192046,Não especificada
+javascript-algorithms,186421,JavaScript
 tensorflow,184867,C++
 Python,183547,Python
 You-Dont-Know-JS,178688,Não especificada
-linux,176855,C
+linux,176856,C
 CS-Notes,174393,Não especificada
-ohmyzsh,171946,Shell
-bootstrap,169856,JavaScript
+ohmyzsh,171947,Shell
+bootstrap,169857,JavaScript
 computer-science,167660,Não especificada
 AutoGPT,166026,Python
 flutter,164215,Dart
-vscode,161818,TypeScript
-gitignore,160646,Não especificada
+vscode,161820,TypeScript
+gitignore,160647,Não especificada
 Python-100-Days,154114,Python
-the-art-of-command-line,151881,Não especificada
+the-art-of-command-line,151880,Não especificada
 JavaGuide,145564,Java
 javascript,144384,JavaScript
-the-book-of-secret-knowledge,141611,Não especificada
+the-book-of-secret-knowledge,141614,Não especificada
 stable-diffusion-webui,138487,Python
 transformers,131108,Python
 youtube-dl,130972,Python
-awesome-go,127598,Go
+awesome-go,127599,Go
 fucking-algorithm,124746,Markdown
 next.js,124283,JavaScript
 go,122200,Go
 30-seconds-of-code,120855,JavaScript
-react-native,117726,C++
+react-native,117727,C++
 tech-interview-handbook,115847,TypeScript
 electron,113493,C++
 free-programming-books-zh_CN,110912,Não especificada
-kubernetes,109381,Go
-awesome-chatgpt-prompts,108397,HTML
+kubernetes,109380,Go
+awesome-chatgpt-prompts,108396,HTML
 d3,108332,Shell
-PowerToys,108323,C#
-scrcpy,107909,C
+PowerToys,108324,C#
+scrcpy,107911,C
 node,106183,JavaScript
 axios,105059,JavaScript
 create-react-app,102430,JavaScript
 three.js,101291,JavaScript
-TypeScript,99821,TypeScript
+TypeScript,99822,TypeScript
 nodebestpractices,98943,Dockerfile
 GitHub-Chinese-Top-Charts,97662,Java
-rust,96271,Rust
+rust,96272,Rust
 angular,95582,TypeScript
 terminal,94731,C++
 hello-algo,93808,Java
 deno,93755,Rust
-material-ui,93028,TypeScript
-Microsoft-Activation-Scripts,92036,Batchfile
+material-ui,93030,TypeScript
+Microsoft-Activation-Scripts,92038,Batchfile
 ant-design,91668,TypeScript
 langchain,91204,Jupyter Notebook
-clean-code-javascript,91065,JavaScript
+clean-code-javascript,91066,JavaScript
 HelloGitHub,89594,Python
-java-design-patterns,89106,Java
-godot,88215,C++
-puppeteer,88037,TypeScript
+java-design-patterns,89107,Java
+godot,88218,C++
+puppeteer,88038,TypeScript
 vue-element-admin,87406,Vue
 free-for-dev,86690,HTML
-ollama,86535,Go
-papers-we-love,86334,Shell
+ollama,86537,Go
+papers-we-love,86335,Shell
 thefuck,84266,Python
 storybook,83835,TypeScript
 iptv,83793,JavaScript
 frp,83775,Go
-Web-Dev-For-Beginners,82754,JavaScript
-Awesome-Hacking,81864,Não especificada
-every-programmer-should-know,81800,Não especificada
+Web-Dev-For-Beginners,82753,JavaScript
+Awesome-Hacking,81865,Não especificada
+every-programmer-should-know,81801,Não especificada
 pytorch,81582,Python
 tailwindcss,81446,TypeScript
 tauri,81181,Rust
@@ -87,16 +87,16 @@ neovim,81100,Vim Script
 yt-dlp,80858,Python
 animate.css,80475,CSS
 realworld,80171,TypeScript
-excalidraw,79804,TypeScript
+excalidraw,79806,TypeScript
 django,78597,Python
-nvm,78431,Shell
+nvm,78432,Shell
 app-ideas,78372,Não especificada
 svelte,78045,JavaScript
 laravel,77885,PHP
 bitcoin,77700,C++
 opencv,77621,C++
 gin,77598,Go
-mall,77038,Java
+mall,77039,Java
 models,76917,Python
 FiraCode,76520,Clojure
 advanced-java,75528,Java
@@ -104,14 +104,14 @@ LeetCodeAnimation,75255,Java
 fastapi,74937,Python
 hugo,74425,Go
 ChatGPT-Next-Web,74271,TypeScript
-awesome-mac,74228,JavaScript
+awesome-mac,74229,JavaScript
 spring-boot,74223,Java
 Font-Awesome,73466,JavaScript
 bun,72785,Zig
 json-server,72396,JavaScript
 awesome-vue,71778,Não especificada
 rustdesk,71118,Rust
-supabase,70809,TypeScript
+supabase,70810,TypeScript
 core,70588,Python
 netdata,70214,C
 mermaid,70196,JavaScript
@@ -119,15 +119,15 @@ awesome-interview-questions,69974,Não especificada
 elasticsearch,69037,Java
 ML-For-Beginners,68844,HTML
 gpt4all,68727,C++
-moby,68365,Go
+moby,68366,Go
 Front-End-Checklist,68309,Não especificada
 node,68048,Shell
 github-readme-stats,67681,JavaScript
 reveal.js,67470,JavaScript
 flask,67362,Python
-code-server,67255,TypeScript
+code-server,67256,TypeScript
 stable-diffusion,67231,Jupyter Notebook
-funNLP,67209,Python
+funNLP,67210,Python
 swift,67193,C++
 awesome-for-beginners,67111,Não especificada
 ui,67038,TypeScript
@@ -147,8 +147,8 @@ webpack,64429,JavaScript
 Chart.js,64243,JavaScript
 awesome-react,64077,Não especificada
 llama.cpp,64031,C++
-grafana,63451,TypeScript
-hoppscotch,63426,TypeScript
+grafana,63453,TypeScript
+hoppscotch,63427,TypeScript
 gpt_academic,63424,Python
 fzf,63348,Go
 syncthing,63280,Go
@@ -159,14 +159,14 @@ strapi,62473,TypeScript
 system-design-101,62375,Não especificada
 ansible,62170,Python
 javascript-questions,61987,Não especificada
-the-algorithm,61952,Scala
-cpython,61902,Python
-resume.github.com,61793,JavaScript
+the-algorithm,61953,Scala
+cpython,61903,Python
+resume.github.com,61794,JavaScript
 manim,61534,Python
 keras,61493,Python
 superset,61353,TypeScript
 Ventoy,61294,C
-generative-ai-for-beginners,61174,Jupyter Notebook
+generative-ai-for-beginners,61177,Jupyter Notebook
 socket.io,60794,TypeScript
 redux,60751,TypeScript
 d2l-zh,60733,Python
@@ -179,7 +179,7 @@ awesome-public-datasets,59815,Não especificada
 gpt4free,59754,Python
 markdown-here,59610,JavaScript
 architect-awesome,59608,Não especificada
-lodash,59527,JavaScript
+lodash,59528,JavaScript
 Front-end-Developer-Interview-Questions,59443,Nunjucks
 PayloadsAllTheThings,59376,Python
 scikit-learn,59248,Python
@@ -197,59 +197,59 @@ tabby,57931,TypeScript
 awesome-scalability,57783,Não especificada
 awesome-nodejs,57593,Não especificada
 Apollo-11,57385,Assembly
-caddy,56507,Go
+caddy,56508,Go
 SecLists,56498,PHP
 html5-boilerplate,56359,JavaScript
 awesome-courses,56176,Não especificada
 spring-framework,56036,Java
 screenshot-to-code,55744,Python
 rails,55497,Ruby
-alacritty,55322,Rust
-llama,55219,Python
+alacritty,55323,Rust
+llama,55220,Python
 gatsby,55195,JavaScript
 docusaurus,55036,TypeScript
 cs-self-learning,54972,HTML
-uptime-kuma,54880,JavaScript
+uptime-kuma,54881,JavaScript
 prometheus,54493,Go
 leetcode,54332,JavaScript
 DeepLearning-500-questions,54096,JavaScript
 element,54080,Vue
 new-pac,53947,Não especificada
-nuxt,53817,TypeScript
-sherlock,53597,Python
+nuxt,53816,TypeScript
+sherlock,53598,Python
 localstack,53509,Python
 act,53447,Go
 nerd-fonts,53442,CSS
 private-gpt,53365,Python
 annotated_deep_learning_paper_implementations,53158,Python
 awesome-flutter,52746,Dart
-react-router,52692,TypeScript
+react-router,52693,TypeScript
 face_recognition,52691,Python
 normalize.css,52279,CSS
 rustlings,52239,Rust
 scrapy,52163,Python
 ChatGPT,52038,Rust
 awesome-chatgpt-prompts-zh,51937,Não especificada
-Real-Time-Voice-Cloning,51933,Python
+Real-Time-Voice-Cloning,51934,Python
 requests,51908,Python
 gpt-engineer,51708,Python
 open-interpreter,51708,Python
-git,51584,C
+git,51585,C
 AppFlowy,51425,Dart
 Semantic-UI,51098,JavaScript
 ionic-framework,50837,TypeScript
-material-design-icons,50336,Não especificada
-faceswap,50199,Python
-tldr,50163,Markdown
-ghidra,50148,Java
+material-design-icons,50337,Não especificada
+faceswap,50200,Python
+tldr,50162,Markdown
+ghidra,50149,Java
 awesome-android-ui,50093,Não especificada
 leetcode-master,50019,Shell
 guava,49921,Java
 you-get,49838,Python
 lazygit,49794,Go
-traefik,49793,Go
+traefik,49794,Go
 anime,49468,JavaScript
-grok-1,49375,Python
+grok-1,49376,Python
 yolov5,49320,Python
 drawio-desktop,49275,JavaScript
 bulma,49083,CSS
@@ -260,7 +260,7 @@ rich,48699,Python
 kotlin,48677,Kotlin
 bat,48438,Rust
 pi-hole,48267,Shell
-ComfyUI,48169,Python
+ComfyUI,48170,Python
 mkcert,48129,Go
 DefinitelyTyped,48084,TypeScript
 project-layout,48043,Makefile
@@ -268,12 +268,12 @@ moment,47935,JavaScript
 RxJava,47820,Java
 chinese-poetry,47718,JavaScript
 pdf.js,47710,JavaScript
-hacker-scripts,47447,JavaScript
+hacker-scripts,47449,JavaScript
 Prompt-Engineering-Guide,47233,MDX
 github-cheat-sheet,47218,Não especificada
-ripgrep,47185,Rust
+ripgrep,47186,Rust
 etcd,47151,Go
-go-ethereum,47063,Go
+go-ethereum,47064,Go
 awesome-ios,46787,Swift
 Ghost,46662,JavaScript
 Magisk,46650,C++
@@ -281,27 +281,27 @@ mastodon,46603,Ruby
 cypress,46590,JavaScript
 dayjs,46530,JavaScript
 algorithm-visualizer,46528,JavaScript
-core,46348,TypeScript
+core,46349,TypeScript
 segment-anything,46342,Jupyter Notebook
 serverless,46342,JavaScript
-minio,46283,Go
+minio,46285,Go
 marktext,46148,JavaScript
 professional-programming,46147,Python
 trackerslist,46126,Não especificada
 big-list-of-naughty-strings,46102,Python
-meilisearch,46055,Rust
+meilisearch,46057,Rust
 rclone,45777,Go
-zustand,45727,TypeScript
+zustand,45729,TypeScript
 okhttp,45647,Kotlin
 uBlock,45542,JavaScript
 learn-regex,45477,Não especificada
 awesome-rust,45458,Rust
 julia,45338,Julia
 awesome-wechat-weapp,45288,Não especificada
-zed,45241,Rust
+zed,45245,Rust
 powerlevel10k,45202,Shell
 v2ray-core,45194,Go
-astro,45128,TypeScript
+astro,45129,TypeScript
 dive,45119,Go
 Projects,44859,Não especificada
 react,44828,JavaScript
@@ -311,7 +311,7 @@ Motrix,44710,JavaScript
 FFmpeg,44549,C
 nocodb,44495,TypeScript
 PowerShell,44460,C#
-hackingtool,44413,Python
+hackingtool,44415,Python
 design-patterns-for-humans,44386,Não especificada
 100-Days-Of-ML-Code,44369,Não especificada
 weekly,44326,Não especificada
@@ -319,17 +319,17 @@ fuels-rs,44303,Rust
 fuels-ts,44300,TypeScript
 meteor,44251,JavaScript
 architecture-samples,44241,Kotlin
-n8n,44228,TypeScript
+n8n,44229,TypeScript
 first-contributions,44210,Não especificada
 x64dbg,44182,C++
-hiring-without-whiteboards,44153,JavaScript
+hiring-without-whiteboards,44154,JavaScript
 jest,44001,TypeScript
-starship,43908,Rust
-AdminLTE,43847,Astro
+starship,43910,Rust
+AdminLTE,43848,Astro
 gitea,43825,Go
 pixijs,43376,TypeScript
 parcel,43354,JavaScript
-TensorFlow-Examples,43338,Jupyter Notebook
+TensorFlow-Examples,43337,Jupyter Notebook
 MetaGPT,43254,Python
 appwrite,43227,TypeScript
 build-web-application-with-golang,43172,Go
@@ -338,11 +338,11 @@ babel,43132,TypeScript
 pandas,43069,Python
 retrofit,42921,HTML
 quill,42871,TypeScript
-immich,42843,TypeScript
+immich,42846,TypeScript
 dify,42830,TypeScript
 zx,42738,JavaScript
 huginn,42638,Ruby
-PythonDataScienceHandbook,42579,Jupyter Notebook
+PythonDataScienceHandbook,42580,Jupyter Notebook
 ImHex,42469,C++
 30-Days-Of-JavaScript,42366,JavaScript
 CppCoreGuidelines,42333,CSS
@@ -356,7 +356,7 @@ awesome-react-components,41768,Não especificada
 git-flight-rules,41702,Não especificada
 discourse,41562,Ruby
 grpc,41459,C++
-query,41441,TypeScript
+query,41442,TypeScript
 yarn,41399,JavaScript
 react-use,41383,TypeScript
 alist,41338,Go
@@ -375,7 +375,7 @@ brew,40601,Ruby
 edex-ui,40463,JavaScript
 drawio,40370,JavaScript
 styled-components,40353,TypeScript
-Docker-OSX,40324,Shell
+Docker-OSX,40325,Shell
 dubbo,40319,Java
 kubernetes-the-hard-way,40300,Não especificada
 ChatGLM-6B,40296,Python
@@ -400,18 +400,18 @@ fastlane,38978,Ruby
 ailearning,38963,Python
 materialize,38863,JavaScript
 reactjs-interview-questions,38698,JavaScript
-kong,38687,Lua
+kong,38688,Lua
 awesome-design-patterns,38679,Não especificada
 prisma,38625,TypeScript
 CPlusPlusThings,38595,C++
 ColossalAI,38517,Python
-pyenv,38380,Roff
-sentry,38373,Python
+pyenv,38382,Roff
+sentry,38375,Python
 black,38271,Python
-acme.sh,38258,Shell
+acme.sh,38259,Shell
 pocketbase,38251,Go
 stablediffusion,38152,Python
-AFFiNE,38113,TypeScript
+AFFiNE,38112,TypeScript
 cheat.sh,38033,Python
 fanqiang,37938,Kotlin
 Deep-Learning-Papers-Reading-Roadmap,37874,Python
@@ -438,27 +438,27 @@ phaser,36858,JavaScript
 zju-icicles,36832,HTML
 htmx,36824,JavaScript
 tidb,36800,Go
-open-webui,36737,Svelte
+open-webui,36740,Svelte
 diagrams,36710,Python
 free,36688,Não especificada
 nvm-windows,36649,Go
 English-level-up-tips,36542,HTML
 interview_internal_reference,36495,Python
-preact,36494,JavaScript
+preact,36495,JavaScript
 cli,36486,Go
 tutorials,36429,Java
 gorm,36400,Go
 pure-bash-bible,36375,Shell
-ClickHouse,36358,C++
-llm-course,36333,Jupyter Notebook
-50projects50days,36269,CSS
+ClickHouse,36359,C++
+llm-course,36334,Jupyter Notebook
+50projects50days,36270,CSS
 ant-design-pro,36264,TypeScript
 FastChat,36247,Python
 manifesto,36238,HTML
 vaultwarden,36184,Rust
 python-cheatsheet,36047,Python
-leveldb,36007,C++
-lazydocker,36006,Go
+leveldb,36008,C++
+lazydocker,36005,Go
 airflow,35983,Python
 vim,35958,Vim Script
 shellcheck,35952,Haskell
@@ -479,7 +479,7 @@ taro,35265,TypeScript
 curl,35209,C
 fullPage.js,35117,JavaScript
 hello-algorithm,35101,Java
-aspnetcore,35078,C#
+aspnetcore,35077,C#
 koa,35071,JavaScript
 bark,35037,Jupyter Notebook
 tldraw,34989,TypeScript
@@ -506,15 +506,15 @@ carbon,34407,JavaScript
 gym,34406,Python
 date-fns,34365,TypeScript
 photoprism,34239,Go
-tmux,34234,C
+tmux,34232,C
 streamlit,34229,Python
 interview,34224,C++
-Ryujinx,34212,C#
-termux-app,34191,Java
-insomnia,34179,JavaScript
-trpc,34124,TypeScript
+Ryujinx,34213,C#
+termux-app,34197,Java
+insomnia,34180,JavaScript
+trpc,34125,TypeScript
 googletest,34116,C++
-lapce,34114,Rust
+lapce,34115,Rust
 TrafficMonitor,34092,C++
 novu,34027,TypeScript
 caffe,34015,C++
@@ -528,12 +528,12 @@ vim-plug,33818,Vim Script
 12306,33733,Python
 pandoc,33725,Haskell
 google-research,33693,Jupyter Notebook
-metasploit-framework,33636,Ruby
+metasploit-framework,33637,Ruby
 gold-miner,33627,Não especificada
 Files,33554,C#
 shadowsocks,33546,Python
-compose,33434,Go
-zig,33406,Zig
+compose,33433,Go
+zig,33409,Zig
 HanLP,33355,Python
 AFNetworking,33336,Objective-C
 Summer2025-Internships,33281,Não especificada
@@ -544,18 +544,18 @@ netty,33207,Java
 AndroidUtilCode,33189,Java
 fd,33140,Rust
 awesome-compose,33126,HTML
-EasySpider,33095,JavaScript
+EasySpider,33097,JavaScript
 react-beautiful-dnd,33083,JavaScript
 Awesome-Design-Tools,33028,JavaScript
 REKCARC-TSC-UHT,32999,HTML
-jieba,32997,Python
+jieba,32998,Python
 halo,32987,Java
 jellyfin,32964,C#
 gulp,32959,JavaScript
 XX-Net,32948,Python
 TTS,32948,Python
 immutable-js,32910,TypeScript
-appsmith,32855,TypeScript
+appsmith,32856,TypeScript
 daisyui,32855,Svelte
 spring-boot-demo,32776,Java
 ray,32769,Python
@@ -571,10 +571,10 @@ helix,32370,Rust
 ijkplayer,32365,C
 ccxt,32308,Python
 ShadowsocksX-NG,32307,Swift
-typst,32286,Rust
+typst,32287,Rust
 material-design-lite,32282,HTML
 carbon-lang,32267,C++
-expo,32252,TypeScript
+expo,32253,TypeScript
 husky,32215,JavaScript
 gitness,32053,Go
 framework,32039,PHP
@@ -582,14 +582,14 @@ JavaScript,31986,JavaScript
 solid,31944,TypeScript
 penpot,31938,Clojure
 easyexcel,31873,Java
-logseq,31733,Clojure
+logseq,31734,Clojure
 gradio,31733,Python
 fastify,31723,JavaScript
 sqlmap,31720,Python
 RSSHub,31608,TypeScript
 android-open-project,31597,Não especificada
 awesome-awesomeness,31574,Ruby
-GitHubDaily,31571,Não especificada
+GitHubDaily,31572,Não especificada
 GPT-SoVITS,31539,Python
 run,31413,Não especificada
 nushell,31351,Rust
@@ -612,7 +612,7 @@ linux-command,30805,Markdown
 vault,30777,Go
 zsh-autosuggestions,30770,Shell
 awesome-php,30768,Não especificada
-clash-verge-rev,30720,TypeScript
+clash-verge-rev,30719,TypeScript
 cal.com,30712,TypeScript
 openpose,30678,C++
 OpenHands,30655,Python
@@ -627,21 +627,21 @@ spacedrive,30345,TypeScript
 p3c,30338,Kotlin
 ruff,30323,Rust
 learnGitBranching,30319,JavaScript
-How-To-Ask-Questions-The-Smart-Way,30311,JavaScript
+How-To-Ask-Questions-The-Smart-Way,30313,JavaScript
 libpku,30306,TeX
 html2canvas,30302,TypeScript
 NeteaseCloudMusicApi,30271,Não especificada
-serenity,30253,C++
+serenity,30255,C++
 portainer,30191,TypeScript
 nps,30152,Go
-spring-boot-examples,30150,Java
+spring-boot-examples,30151,Java
 faiss,30144,C++
 lottie-web,30139,JavaScript
-swr,30138,TypeScript
+swr,30139,TypeScript
 dotfiles,30108,Shell
-selenium,30064,Java
+selenium,30063,Java
 AnotherRedisDesktopManager,30063,JavaScript
-fairseq,30052,Python
+fairseq,30053,Python
 HEAD,29973,Não especificada
 jq,29965,C
 autogen,29949,Jupyter Notebook
@@ -659,7 +659,7 @@ foundation-sites,29651,HTML
 ChatTTS,29644,Python
 awesome-docker,29624,Não especificada
 jax,29615,Python
-symfony,29572,PHP
+symfony,29573,PHP
 spaCy,29545,Python
 slate,29522,TypeScript
 ControlNet,29520,Python
@@ -682,42 +682,42 @@ leakcanary,29294,Kotlin
 stanford_alpaca,29292,Python
 interactive-coding-challenges,29283,Python
 OpenBB,29275,Python
-maybe,29255,Ruby
+maybe,29254,Ruby
 es6features,29213,Não especificada
-500lines,29198,JavaScript
+500lines,29199,JavaScript
 Hover,29186,SCSS
 etcher,29144,TypeScript
 COVID-19,29136,Não especificada
 upscayl,29118,TypeScript
-Flowise,29074,TypeScript
-minikube,29062,Go
+Flowise,29076,TypeScript
+minikube,29063,Go
 standard,29040,JavaScript
 milvus,29032,Go
 apollo,29023,Java
 mattermost,29014,TypeScript
-Deep-Live-Cam,29005,Python
+Deep-Live-Cam,29014,Python
 pnpm,28974,TypeScript
 awesome-remote-job,28972,Não especificada
-ShareX,28959,C#
+ShareX,28960,C#
 mmdetection,28916,Python
-jsPDF,28910,JavaScript
+jsPDF,28911,JavaScript
 AI-Expert-Roadmap,28889,JavaScript
 hutool,28872,Java
 uppy,28850,TypeScript
-remote-jobs,28837,JavaScript
+remote-jobs,28838,JavaScript
 particles.js,28826,JavaScript
 v2ray-core,28795,Go
 polars,28793,Rust
 awesome-macos-command-line,28748,Não especificada
 sharp,28743,JavaScript
 OpenAPI-Specification,28742,Markdown
-remix,28726,TypeScript
+remix,28727,TypeScript
 go-zero,28696,Go
 swift-algorithm-club,28696,Swift
 Awesome,28635,Não especificada
 algo,28608,Jinja
 todomvc,28579,JavaScript
-ToolJet,28567,JavaScript
+ToolJet,28568,JavaScript
 fabric.js,28537,JavaScript
 awesome-python-cn,28516,Makefile
 influxdb,28506,Rust
@@ -729,7 +729,7 @@ YesPlayMusic,28383,Vue
 Mr.-Ranedeer-AI-Tutor,28381,Não especificada
 linkedin-skill-assessments-quizzes,28357,Não especificada
 slick,28354,JavaScript
-aseprite,28352,C++
+aseprite,28353,C++
 RevokeMsgPatcher,28304,C#
 cheerio,28304,TypeScript
 android_guides,28292,Não especificada
@@ -739,8 +739,8 @@ tqdm,28228,Python
 CyberChef,28227,JavaScript
 kafka,28208,Java
 consul,28187,Go
+coolify,28174,PHP
 SpringAll,28173,Java
-coolify,28170,PHP
 async,28148,JavaScript
 lighthouse,28147,JavaScript
 rocksdb,28138,C++
@@ -748,17 +748,17 @@ rufus,28133,C
 python-guide,28125,Batchfile
 GPTs,28115,Não especificada
 backbone,28100,JavaScript
-OpenVoice,28069,Python
+OpenVoice,28070,Python
 django-rest-framework,28050,Python
 css-protips,28047,Não especificada
 editor.js,28042,TypeScript
 machine-learning-for-software-engineers,28027,Não especificada
 ChatGPT,27998,Python
 chatbot-ui,27951,TypeScript
-react-spring,27910,TypeScript
+react-spring,27909,TypeScript
 folly,27880,C++
 druid,27859,Java
-pytorch-lightning,27819,Python
+pytorch-lightning,27820,Python
 freqtrade,27782,Python
 alpine,27779,HTML
 the-super-tiny-compiler,27773,JavaScript
@@ -767,7 +767,7 @@ spring-cloud-alibaba,27743,Java
 ultralytics,27643,Python
 legado,27631,Kotlin
 mpv,27614,C
-llvm-project,27608,LLVM
+llvm-project,27609,LLVM
 servo,27601,Rust
 handson-ml2,27573,Jupyter Notebook
 Data-Science-For-Beginners,27556,Jupyter Notebook
@@ -794,19 +794,19 @@ xxl-job,27255,Java
 vhr,27251,Java
 LLM101n,27232,Não especificada
 netron,27231,JavaScript
-MonitorControl,27141,Swift
+MonitorControl,27142,Swift
 weui,27132,Less
 applied-ml,27109,Não especificada
 ResumeSample,27106,Não especificada
 JCSprout,27068,Java
 Complete-Python-3-Bootcamp,27052,Jupyter Notebook
-plane,27048,TypeScript
+plane,27049,TypeScript
 data-science-ipython-notebooks,27034,Python
-refine,27000,TypeScript
+refine,27001,TypeScript
 legacy-homebrew,26994,Não especificada
 react-three-fiber,26974,TypeScript
 directus,26911,TypeScript
-reverse-interview,26908,Não especificada
+reverse-interview,26909,Não especificada
 os-tutorial,26867,C
 gitbook,26867,TypeScript
 outline,26858,TypeScript
@@ -815,7 +815,7 @@ xstate,26792,TypeScript
 Faker,26786,PHP
 python-fire,26784,Python
 codemirror5,26748,JavaScript
-roop,26728,Python
+roop,26734,Python
 angular-cli,26714,TypeScript
 hangzhou_house_knowledge,26712,CSS
 helm,26691,Go
@@ -857,9 +857,9 @@ stb,26165,C
 miaosha,26155,Java
 glances,26138,Python
 vagrant,26132,Ruby
-UTM,26077,Swift
+UTM,26078,Swift
 mindsdb,26065,Python
-fastai,26035,Jupyter Notebook
+fastai,26036,Jupyter Notebook
 nprogress,26033,JavaScript
 the_silver_searcher,26022,C
 xgboost,26019,C++
@@ -874,18 +874,18 @@ redash,25836,Python
 fetch,25805,JavaScript
 fastText,25800,HTML
 paper-reading,25798,Não especificada
-cmder,25788,C++
+cmder,25789,C++
 hacker-laws,25723,Shell
 llama3,25718,Python
 Depix,25717,Python
 python-telegram-bot,25713,Python
+langflow,25702,JavaScript
 fastjson,25700,Java
-langflow,25700,JavaScript
 request,25680,JavaScript
 quasar,25671,JavaScript
 lossless-cut,25651,TypeScript
 darknet,25649,C
-DeepFaceLive,25646,Python
+DeepFaceLive,25647,Python
 Modernizr,25630,JavaScript
 awesome-electron,25630,Não especificada
 lottie-ios,25608,Swift
@@ -898,7 +898,7 @@ spleeter,25543,Python
 tdesktop,25534,C++
 restic,25522,Go
 headlessui,25509,TypeScript
-fish-shell,25480,Rust
+fish-shell,25481,Rust
 Rectangle,25461,Swift
 filebrowser,25405,Go
 vllm,25396,Python
@@ -942,12 +942,12 @@ SmartRefreshLayout,24854,Java
 textual,24826,Python
 nsq,24817,Go
 setup-ipsec-vpn,24816,Shell
-diffusers,24815,Python
+diffusers,24816,Python
 nylas-mail,24807,JavaScript
 go,24796,Não especificada
 eslint,24791,JavaScript
 pipenv,24781,Python
-feather,24766,JavaScript
+feather,24765,JavaScript
 awesome-vscode,24746,JavaScript
 table,24741,TypeScript
 k6,24722,Go
@@ -970,12 +970,12 @@ eShopOnContainers,24546,C#
 awesome-datascience,24538,Não especificada
 envoy,24516,C++
 autocomplete,24506,TypeScript
-CasaOS,24503,Go
+CasaOS,24504,Go
 Mask_RCNN,24492,Python
 logrus,24456,Go
 locust,24455,Python
-flameshot,24412,C++
-fyne,24370,Go
+flameshot,24413,C++
+fyne,24371,Go
 bruno,24357,JavaScript
 CLIP,24341,Jupyter Notebook
 vnpy,24336,Python
@@ -985,8 +985,8 @@ stats,24295,Swift
 celery,24293,Python
 core-js,24292,JavaScript
 wttr.in,24285,Python
+Wox,24282,Go
 awesome-sysadmin,24282,Não especificada
-Wox,24281,Go
 medusa,24281,TypeScript
 components,24276,TypeScript
 pkg,24271,JavaScript

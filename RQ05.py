@@ -1,5 +1,8 @@
+import numpy as np
 import requests
 import csv
+
+from scipy import stats
 
 # Configurações da API
 GITHUB_API_URL = "https://api.github.com/graphql"
