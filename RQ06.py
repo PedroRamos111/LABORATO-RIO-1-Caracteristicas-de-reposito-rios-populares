@@ -1,6 +1,9 @@
+import numpy as np
 import requests
 from datetime import datetime
 import csv
+
+from scipy import stats
 
 # Configurações da API
 GITHUB_API_URL = "https://api.github.com/graphql"
@@ -78,6 +81,16 @@ with open('DadosRQ06.csv', mode='w', newline='') as arquivo_csv:
         razoes_fechamento.append(razao_fechamento)
         writer.writerow([repo_data['name'], repo_data['stargazers']['totalCount'], f"{razao_fechamento:.2%}"])
 
+media = np.mean(razoes_fechamento)
 
-media_razao_fechamento = sum(razoes_fechamento) / len(razoes_fechamento)
-print(f"Média da Razão de Fechamento de Issues: {media_razao_fechamento:.2%}")
+# Calcular a mediana
+mediana = np.median(razoes_fechamento)
+
+# Calcular a moda
+moda = stats.mode(razoes_fechamento, keepdims=True)
+
+with open('DadosRQ06.csv', mode='a', newline='') as arquivo_csv:  
+    writer = csv.writer(arquivo_csv)
+    writer.writerow([])
+    writer.writerow(["Média", "Mediana", "Moda", "Ocorrências"])
+    writer.writerow([media, mediana, moda.mode[0], moda.count[0]])

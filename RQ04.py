@@ -1,6 +1,9 @@
+import numpy as np
 import requests
 from datetime import datetime
 import csv
+
+from scipy import stats
 
 # Configurações da API
 GITHUB_API_URL = "https://api.github.com/graphql"
@@ -72,6 +75,17 @@ with open('DadosRQ04.csv', mode='w', newline='') as arquivo_csv:
         tempos_atualizacao.append(tempo_atualizacao_horas)
         writer.writerow([repo_data['name'], repo_data['stargazers']['totalCount'], f"{tempo_atualizacao_horas:.2f}"])
 
-# Calcular a média do tempo desde a última atualização em horas
-media_tempo_atualizacao_horas = sum(tempos_atualizacao) / len(tempos_atualizacao)
-print(f"Média do Tempo desde a Última Atualização: {media_tempo_atualizacao_horas:.2f} horas")
+
+media = np.mean(tempos_atualizacao)
+
+# Calcular a mediana
+mediana = np.median(tempos_atualizacao)
+
+# Calcular a moda
+moda = stats.mode(tempos_atualizacao, keepdims=True)
+
+with open('DadosRQ04.csv', mode='a', newline='') as arquivo_csv:  
+    writer = csv.writer(arquivo_csv)
+    writer.writerow([])
+    writer.writerow(["Média", "Mediana", "Moda", "Ocorrências"])
+    writer.writerow([media, mediana, moda.mode[0], moda.count[0]])
