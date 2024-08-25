@@ -91,6 +91,5 @@ moda = stats.mode(razoes_fechamento, keepdims=True)
 
 with open('DadosRQ06.csv', mode='a', newline='') as arquivo_csv:  
     writer = csv.writer(arquivo_csv)
-    writer.writerow([])
-    writer.writerow(["Média", "Mediana", "Moda", "Ocorrências"])
-    writer.writerow([media, mediana, moda.mode[0], moda.count[0]])
+    writer.writerow(["Média", "Mediana", "Moda/Ocorrências"])
+    writer.writerow([media, mediana, moda.mode[0] + "/" + moda.count[0]])
