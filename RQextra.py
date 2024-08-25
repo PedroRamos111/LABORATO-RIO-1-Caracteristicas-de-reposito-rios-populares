@@ -1,5 +1,12 @@
 import requests
+from datetime import datetime
+from langdetect import detect, DetectorFactory
+from langdetect.lang_detect_exception import LangDetectException
+import langcodes
 import csv
+
+# Para resultados consistentes
+DetectorFactory.seed = 0
 
 # Configurações da API
 GITHUB_API_URL = "https://api.github.com/graphql"
@@ -32,8 +39,16 @@ query ($after: String) {
           stargazers {
             totalCount
           }
+          releases {
+            totalCount
+          }
           primaryLanguage {
             name
+          }
+          object(expression: "HEAD:README.md") {
+            ... on Blob {
+              text
+            }
           }
         }
       }
@@ -42,12 +57,13 @@ query ($after: String) {
 }
 """
 
+# Variável para paginação
 variables = {"after": None}
 resultados = []
 total_repos = 0
 max_repos = 1000
 
-# Coletar dados de até 100 repositórios
+# Coletar dados de até 1000 repositórios
 while total_repos < max_repos:
     result = run_query(query, variables)
     data = result['data']['search']
@@ -59,16 +75,25 @@ while total_repos < max_repos:
 
 resultados = resultados[:max_repos]
 
-# Processar os dados e salvar as informações em um arquivo CSV
-linguagens = []
-with open('DadosRQ05.csv', mode='w', newline='') as arquivo_csv:
+# Processar os dados para detectar o idioma do README.md e salvar as informações em um arquivo csv
+idiomas = []
+with open('DadosRQextra.csv', mode='w', newline='') as arquivo_csv:
     writer = csv.writer(arquivo_csv)
-    writer.writerow(["Nome do Repositório", "Estrelas", "Linguagem Principal"])
-
+    writer.writerow(["Nome do Repositório", "Estrelas", "Idioma"])
     for index, repo in enumerate(resultados, start=1):
         repo_data = repo['node']
-        linguagem = repo_data['primaryLanguage']['name'] if repo_data['primaryLanguage'] else "Não especificada"
-        linguagens.append(linguagem)
-        writer.writerow([repo_data['name'], repo_data['stargazers']['totalCount'], linguagem])
+        readme_text = repo_data['object']['text'] if repo_data['object'] else ""
+        
+        if readme_text:
+            try:
+                idioma_sigla = detect(readme_text)
+                idioma_nome_completo = langcodes.Language.get(idioma_sigla).display_name()
+            except LangDetectException:
+                idioma_nome_completo = "Não detectado"
+        else:
+            idioma_nome_completo = "README.md ausente"
+        
+        idiomas.append(idioma_nome_completo)
+        writer.writerow([repo_data['name'], repo_data['stargazers']['totalCount'], f"{idioma_nome_completo}"])
 
-print(f"Dados das linguagens principais dos repositórios foram salvos no arquivo 'DadosRQ05.csv'.")
+print("Os dados foram salvos no arquivo 'DadosRQextra.csv'.")
