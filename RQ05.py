@@ -1,8 +1,5 @@
-import numpy as np
 import requests
 import csv
-
-from scipy import stats
 
 # Configurações da API
 GITHUB_API_URL = "https://api.github.com/graphql"
@@ -50,7 +47,7 @@ resultados = []
 total_repos = 0
 max_repos = 1000
 
-# Coletar dados de até 100 repositórios
+# Coletar dados de até 1000 repositórios
 while total_repos < max_repos:
     result = run_query(query, variables)
     data = result['data']['search']
@@ -62,8 +59,10 @@ while total_repos < max_repos:
 
 resultados = resultados[:max_repos]
 
+# Dicionário para contar a quantidade de cada linguagem
+contagem_linguagens = {}
+
 # Processar os dados e salvar as informações em um arquivo CSV
-linguagens = []
 with open('DadosRQ05.csv', mode='w', newline='') as arquivo_csv:
     writer = csv.writer(arquivo_csv)
     writer.writerow(["Nome do Repositório", "Estrelas", "Linguagem Principal"])
@@ -71,7 +70,18 @@ with open('DadosRQ05.csv', mode='w', newline='') as arquivo_csv:
     for index, repo in enumerate(resultados, start=1):
         repo_data = repo['node']
         linguagem = repo_data['primaryLanguage']['name'] if repo_data['primaryLanguage'] else "Não especificada"
-        linguagens.append(linguagem)
+        
+        # Incrementa a contagem da linguagem
+        if linguagem in contagem_linguagens:
+            contagem_linguagens[linguagem] += 1
+        else:
+            contagem_linguagens[linguagem] = 1
+        
         writer.writerow([repo_data['name'], repo_data['stargazers']['totalCount'], linguagem])
 
 print(f"Dados das linguagens principais dos repositórios foram salvos no arquivo 'DadosRQ05.csv'.")
+
+# Imprimir a contagem de cada linguagem
+print("\nContagem de repositórios por linguagem:")
+for linguagem, contagem in contagem_linguagens.items():
+    print(f"{linguagem}: {contagem} repositórios")
