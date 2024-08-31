@@ -79,9 +79,10 @@ with open('DadosRQ05.csv', mode='w', newline='') as arquivo_csv:
         
         writer.writerow([repo_data['name'], repo_data['stargazers']['totalCount'], linguagem])
 
-print(f"Dados das linguagens principais dos repositórios foram salvos no arquivo 'DadosRQ05.csv'.")
+    # Escrever a contagem de repositórios por linguagem no arquivo CSV
+    writer.writerow([]) 
+    writer.writerow(["Linguagem", "Contagem de Repositórios"])
+    for linguagem, contagem in contagem_linguagens.items():
+        writer.writerow([linguagem, contagem])
 
-# Imprimir a contagem de cada linguagem
-print("\nContagem de repositórios por linguagem:")
-for linguagem, contagem in contagem_linguagens.items():
-    print(f"{linguagem}: {contagem} repositórios")
+print(f"Dados das linguagens principais dos repositórios e contagem por linguagem foram salvos no arquivo 'DadosRQ05.csv'.")

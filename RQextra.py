@@ -104,9 +104,11 @@ with open('DadosRQextra.csv', mode='w', newline='') as arquivo_csv:
         
         writer.writerow([repo_data['name'], repo_data['stargazers']['totalCount'], idioma_nome_completo])
 
-print("Os dados foram salvos no arquivo 'DadosRQextra.csv'.")
 
-# Imprimir a contagem de cada idioma
-print("\nContagem de repositórios por idioma do README.md:")
-for idioma, contagem in contagem_idiomas.items():
-    print(f"{idioma}: {contagem} repositórios")
+   # Escrever a contagem de repositórios por linguagem no arquivo CSV
+    writer.writerow([])  
+    writer.writerow(["Linguagem", "Contagem de Repositórios"])
+    for idioma, contagem in contagem_idiomas.items():
+        writer.writerow([idioma, contagem])
+
+print("Os dados foram salvos no arquivo 'DadosRQextra.csv'.")
