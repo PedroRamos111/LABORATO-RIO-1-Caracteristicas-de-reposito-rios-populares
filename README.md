@@ -8,6 +8,8 @@ Pedro Ramos Vidigal<br><br>
 ```pip install langdetect```<br>
 ```pip install langcodes```<br>
 ```pip install requests```<br>
+```pip install numpy```<br>
+```pip install scipy```<br>
 2. Coloque o seu token da api do github na variável ```TOKEN```<br>
 3. Execute os arquivos .py<br><br>
 ## Requisitos:
