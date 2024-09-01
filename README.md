@@ -25,4 +25,10 @@ atualização)<br><br>
 **RQ 05.** Sistemas populares são escritos nas linguagens mais populares?<br>
 Métrica: linguagem primária de cada um desses repositórios<br><br>
 **RQ 06.** Sistemas populares possuem um alto percentual de issues fechadas?<br>
-Métrica: razão entre número de issues fechadas pelo total de issues Relatório Final:<br>
+Métrica: razão entre número de issues fechadas pelo total de issues Relatório Final:<br><br>
+**RQ 07.** Sistemas escritos em linguagens mais populares recebem mais contribuição
+externa, lançam mais releases e são atualizados com mais frequência?<br>
+Métricas: resultados obtidos nas RQs 02, 03 e 04 divididos por linguagem<br><br>
+**RQ extra.** Sistemas populares são escritos nas línguas mais faladas no mundo?<br>
+Métrica: língua principal de cada um desses repositórios<br><br>
+
